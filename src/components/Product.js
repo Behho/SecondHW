@@ -1,6 +1,5 @@
 import React from 'react'
 import './Product.scss'
-// import PropTypes from 'prop-types';
 import { BsBookmarkStarFill } from 'react-icons/bs';
 import Buttons from './Buttons/Buttons'
 import Modal from './Modal/Modal.js'
@@ -72,7 +71,6 @@ AddTocart(id ,activeType){
                     size="50px" onClick={(id) => {this.props.onClick(product.id); this.MarkAsFavorite()}} 
                     color={this.state.isFavorite ? "#f5e945" : "black"}/>
                     <Buttons button={this.state.button} onClick={clickModalVisibleHeandler}/>
-                    {/* <button className="product-add-cart-button" onClick={() => {this.props.AddTocart(product.id)}}>Add to cart</button> */}
                 </div>
                 <Modal onClick={clickModalVisibleHeandler} 
                 AddTocart={this.AddTocart}  modals={this.state.modals} 
